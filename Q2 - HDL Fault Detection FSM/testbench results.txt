@@ -1,0 +1,45 @@
+# KERNEL: Test 1: Initial state & Normal operation
+# KERNEL: Time: 0, State: NORMAL, Faults: 0000, Mask: 0000, DebounceCnt: 0, PersistenceCnt: 0
+# KERNEL: Test 2: Transient undervoltage fault (should be ignored)
+# KERNEL: Time: 20, State: NORMAL, Faults: 0001, Mask: 0000, DebounceCnt: 0, PersistenceCnt: 0
+# KERNEL: Time: 25, State: NORMAL, Faults: 0001, Mask: 0000, DebounceCnt: 1, PersistenceCnt: 0
+# KERNEL: Test 3: Persistent overtemp fault (transition to WARNING -> FAULT)
+# KERNEL: Time: 35, State: NORMAL, Faults: 0000, Mask: 0000, DebounceCnt: 2, PersistenceCnt: 0
+# KERNEL: Time: 45, State: NORMAL, Faults: 0010, Mask: 0000, DebounceCnt: 0, PersistenceCnt: 0
+# KERNEL: Time: 55, State: NORMAL, Faults: 0010, Mask: 0000, DebounceCnt: 1, PersistenceCnt: 0
+# KERNEL: Time: 65, State: NORMAL, Faults: 0010, Mask: 0000, DebounceCnt: 2, PersistenceCnt: 0
+# KERNEL: Time: 75, State: NORMAL, Faults: 0010, Mask: 0000, DebounceCnt: 3, PersistenceCnt: 0
+# KERNEL: Time: 85, State: NORMAL, Faults: 0010, Mask: 0000, DebounceCnt: 4, PersistenceCnt: 0
+# KERNEL: Time: 95, State: NORMAL, Faults: 0010, Mask: 0000, DebounceCnt: 5, PersistenceCnt: 0
+# KERNEL: Time: 105, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 6, PersistenceCnt: 0
+# KERNEL: Time: 115, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 7, PersistenceCnt: 1
+# KERNEL: Time: 125, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 8, PersistenceCnt: 2
+# KERNEL: Time: 135, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 9, PersistenceCnt: 3
+# KERNEL: Time: 145, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 10, PersistenceCnt: 4
+# KERNEL: Time: 155, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 11, PersistenceCnt: 5
+# KERNEL: Time: 165, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 12, PersistenceCnt: 6
+# KERNEL: Time: 175, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 13, PersistenceCnt: 7
+# KERNEL: Time: 185, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 14, PersistenceCnt: 8
+# KERNEL: Time: 195, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 15, PersistenceCnt: 9
+# KERNEL: Time: 205, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 16, PersistenceCnt: 10
+# KERNEL: Time: 215, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 17, PersistenceCnt: 11
+# KERNEL: Time: 225, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 18, PersistenceCnt: 12
+# KERNEL: Time: 235, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 19, PersistenceCnt: 13
+# KERNEL: Time: 245, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 20, PersistenceCnt: 14
+# KERNEL: Time: 255, State: WARNING, Faults: 0010, Mask: 0000, DebounceCnt: 21, PersistenceCnt: 15
+# KERNEL: Time: 265, State: FAULT, Faults: 0010, Mask: 0000, DebounceCnt: 22, PersistenceCnt: 16
+# KERNEL: Time: 275, State: FAULT, Faults: 0010, Mask: 0000, DebounceCnt: 23, PersistenceCnt: 0
+# KERNEL: Time: 285, State: FAULT, Faults: 0010, Mask: 0000, DebounceCnt: 24, PersistenceCnt: 0
+# KERNEL: Time: 295, State: FAULT, Faults: 0000, Mask: 0000, DebounceCnt: 25, PersistenceCnt: 0
+# KERNEL: Test 4: High-priority overcurrent fault
+# KERNEL: Time: 300, State: NORMAL, Faults: 0000, Mask: 0000, DebounceCnt: 0, PersistenceCnt: 0
+# KERNEL: Time: 315, State: NORMAL, Faults: 1000, Mask: 0000, DebounceCnt: 0, PersistenceCnt: 0
+# KERNEL: Time: 325, State: SHUTDOWN, Faults: 1000, Mask: 0000, DebounceCnt: 0, PersistenceCnt: 0
+# KERNEL: Test 5: High-priority overvoltage fault
+# KERNEL: Time: 345, State: NORMAL, Faults: 0000, Mask: 0000, DebounceCnt: 0, PersistenceCnt: 0
+# KERNEL: Time: 365, State: NORMAL, Faults: 0100, Mask: 0000, DebounceCnt: 0, PersistenceCnt: 0
+# KERNEL: Time: 375, State: FAULT, Faults: 0100, Mask: 0000, DebounceCnt: 0, PersistenceCnt: 0
+# KERNEL: Test 6: Overvoltage fault is masked
+# KERNEL: Time: 395, State: FAULT, Faults: 0100, Mask: 0100, DebounceCnt: 0, PersistenceCnt: 0
+# KERNEL: Time: 405, State: NORMAL, Faults: 0100, Mask: 0100, DebounceCnt: 0, PersistenceCnt: 0
+# KERNEL: All test cases completed. Finishing simulation.
